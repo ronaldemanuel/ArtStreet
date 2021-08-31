@@ -66,23 +66,28 @@ TextFormField(
               SizedBox(
                height: 50,
              ),
-             Container(
-               height: 40,
-              alignment: Alignment.centerLeft,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(
-                  Radius.circular(50),
-                )
+             TextButton(
+               onPressed:(){} ,
+               child: Text("LOGIN"),
+               style: TextButton.styleFrom(
+                 backgroundColor: Colors.white,
+                 shape: RoundedRectangleBorder(
+                   borderRadius: BorderRadius.circular(30)
+                 )
 
-              )
 
-             )
-             
-             
+               ),
+               )
           ],
         ),
-      )
+ )
+
+
+
+
+
+
+
     );
   }
 }
