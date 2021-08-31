@@ -67,16 +67,13 @@ TextFormField(
               SizedBox(
                height: 50,
              ),
-            child: TextButton(
-               onPressed:(){
-                 onPressed: () {
-                      Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => SignUp()),
-                    );
-                  ;
-               },
+             child: TextButton(
+               onPressed:()=>{
+                 Navigator.push(
+                   context,
+                   MaterialPageRoute(builder:(context)=>SignUp()),
+                 )
+               } ,
                child: Text("LOGIN"),
                style: TextButton.styleFrom(
                  backgroundColor: Colors.white,
@@ -86,8 +83,7 @@ TextFormField(
 
 
                ),
-            )
-            ),
+               )
           ],
         ),
  )
