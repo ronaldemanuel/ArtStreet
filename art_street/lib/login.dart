@@ -1,3 +1,4 @@
+import 'singup.dart';
 import 'package:flutter/material.dart';
 
   class LoginPage extends StatelessWidget {
@@ -66,8 +67,16 @@ TextFormField(
               SizedBox(
                height: 50,
              ),
-             TextButton(
-               onPressed:(){} ,
+            child: TextButton(
+               onPressed:(){
+                 onPressed: () {
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SignUp()),
+                    );
+                  ;
+               },
                child: Text("LOGIN"),
                style: TextButton.styleFrom(
                  backgroundColor: Colors.white,
@@ -77,7 +86,8 @@ TextFormField(
 
 
                ),
-               )
+            )
+            ),
           ],
         ),
  )
