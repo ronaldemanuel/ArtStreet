@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class InputForm extends StatelessWidget {
+class FormInput extends StatelessWidget {
   final TextInputType? textType;
   final bool obscureText;
   final String? label;
@@ -8,7 +8,7 @@ class InputForm extends StatelessWidget {
   final FontWeight? fontWeight;
   final double? fontSize;
 
-  InputForm(
+  FormInput(
     this.obscureText, {
     this.textType,
     this.label,
