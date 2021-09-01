@@ -1,4 +1,5 @@
-import 'package:art_street/components/input_form.dart';
+import 'package:art_street/components/form/button.dart';
+import 'package:art_street/components/form/input.dart';
 
 import 'singup.dart';
 import 'package:flutter/material.dart';
@@ -47,7 +48,7 @@ class LoginPage extends StatelessWidget {
         SizedBox(
           height: 20,
         ),
-        InputForm(
+        FormInput(
           false,
           textType: TextInputType.name,
           label: "Nickname",
@@ -58,7 +59,7 @@ class LoginPage extends StatelessWidget {
         SizedBox(
           height: 10,
         ),
-        InputForm(
+        FormInput(
           true,
           textType: TextInputType.text,
           label: "Senha",
@@ -69,20 +70,16 @@ class LoginPage extends StatelessWidget {
         SizedBox(
           height: 50,
         ),
-        TextButton(
+        FormButton(
+          30,
+          "LOGIN",
+          color: Colors.white,
           onPressed: () => {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => SignUp()),
             ),
           },
-          child: Text("LOGIN"),
-          style: TextButton.styleFrom(
-            backgroundColor: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(30),
-            ),
-          ),
         ),
       ],
     );
